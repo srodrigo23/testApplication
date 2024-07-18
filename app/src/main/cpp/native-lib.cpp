@@ -5,6 +5,6 @@ extern "C" JNIEXPORT jstring JNICALL
 Java_com_rodresdev_testapplication_MainActivity_stringFromJNI(
         JNIEnv* env,
         jobject /* this */) {
-    std::string hello = "Hello from C++ app";
-    return env->NewStringUTF(hello.c_str());
+    std::string ip = "192.168.0.1";
+    return env->NewStringUTF(ip.c_str());
 }
